@@ -1,0 +1,18 @@
+﻿// extends walllayout
+
+block content
+    include userdetails
+    .wrapper
+      .box
+        .row.row-offcanvas.row-offcanvas-left
+          // sidebar
+          #sidebar.column.col-sm-2.col-xs-1.sidebar-offcanvas
+            ul.nav
+              li
+                a.visible-xs.text-center(href='#', data-toggle='offcanvas')
+                  i.glyphicon.glyphicon-chevron-right
+            ul#lg-menu.nav.hidden-xs
+                li.active
+                  a(href='http://www.codeproject.com/user/#{account.user}')
+                    img.img-circle(src='http://www.codeproject.com/placehold.it/150x150', width='25px', height='25px')
+                    |  #{account.name}
